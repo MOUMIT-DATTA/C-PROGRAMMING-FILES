@@ -1,7 +1,7 @@
 #include <stdio.h>
 void swap ( int*x,int*y) {   // x amd y here store the adress of a and b
-    int temp;    // *x goes to the adress of stored in x and engages with variable in that particular adress
-    temp=*x;
+    int temp;    // *x goes to the address stored in x and engages with variable in that particular address
+    temp=*x;   // * y similiarly does the same thing
     *x=*y;
     *y=temp;
     return;
