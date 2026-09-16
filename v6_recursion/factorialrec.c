@@ -1,6 +1,6 @@
 #include <stdio.h> 
     int factorial(int n) {
-           if(n==1) return 1;  // base line {tells a refursion where to stop }
+           if(n==1) return 1;  // base line {tells a recursion where to stop }
            return n*factorial(n-1);
            
     }
