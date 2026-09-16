@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main() {
+    int n,i=1;
+    printf("ENTER YOUR NUMBER");
+    scanf("%d",&n); 
+    start:
+    printf("%d x %d = %d\n",n,i,n*i);
+    i++;
+    if(i<=10) {
+        goto start;
+    }
+    else {
+        goto end;
+    }
+    end: 
+    return 0;
+}
