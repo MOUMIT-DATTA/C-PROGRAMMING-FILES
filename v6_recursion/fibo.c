@@ -1,6 +1,7 @@
 #include <stdio.h>
 int fibo(int n) {
-    if(n==1||n==2) return 1;
+    if(n==1) return 0;     // this two baselines are for the the first three terms.
+    if(n<=3) return 1;
     int a1= fibo(n-1);
     int a2= fibo(n-2);
     int a= a1+a2;
