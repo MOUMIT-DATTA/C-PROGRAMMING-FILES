@@ -9,12 +9,17 @@ int main() {                               //important question.
         scanf("%d",&arr[i]);
     }
     int largest=arr[0];
+    int slargest=arr[0];
     for(int i=0;i<=n-1;i++) {
-         if(largest<arr[i]) {
+         if(largest<arr[i]) {   //this loop alone can work for increasing 
+            slargest=largest;
             largest=arr[i];
+         }
+         else if(slargest<arr[i]&& largest!=arr[i]) {      //largest>arr[i]
+            slargest=arr[i];
          }
          
     }
-    printf("largest value of your array is : %d",largest);
+    printf("second largest value of your array is : %d",slargest);
     return 0;
     }

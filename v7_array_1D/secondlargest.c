@@ -9,12 +9,19 @@ int main() {                               //important question.
         scanf("%d",&arr[i]);
     }
     int largest=arr[0];
+    int slargest=arr[0];
     for(int i=0;i<=n-1;i++) {
          if(largest<arr[i]) {
             largest=arr[i];
          }
          
     }
-    printf("largest value of your array is : %d",largest);
+    for(int i=0;i<=n-1;i++) {
+        if(arr[i]!=largest && slargest<arr[i]) {
+            slargest=arr[i];
+        }
+        
+    }
+    printf("required second largest no of your array is : %d",slargest);
     return 0;
     }
