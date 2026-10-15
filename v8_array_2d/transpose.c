@@ -6,6 +6,7 @@ int main() {
     printf("enter number of columns of your matrix : ");
     scanf("%d",&c);
     int arr[r][c];
+    int brr[c][r];
     for(int i=0;i<r;i++) {
         for(int j=0;j<c;j++) {
             scanf("%d",&arr[i][j]);
@@ -19,7 +20,8 @@ int main() {
     }
     for(int i=0;i<c;i++) {
         for(int j=0;j<r;j++) {
-            printf("%d ",arr[j][i]);
+            brr[i][j]=arr[j][i];
+            printf("%d ",brr[i][j]);
         }
         printf("\n");
     }
