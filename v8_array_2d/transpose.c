@@ -20,8 +20,7 @@ int main() {
     }
     for(int i=0;i<c;i++) {
         for(int j=0;j<r;j++) {
-            brr[i][j]=arr[j][i];
-            printf("%d ",brr[i][j]);
+            printf("%d ",arr[j][i]);
         }
         printf("\n");
     }
