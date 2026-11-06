@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <stdio.h> //which row contains the maximum number of a given variable here we have taken one /1
 int main() {
     int maxCount=0;
     int row=0;
