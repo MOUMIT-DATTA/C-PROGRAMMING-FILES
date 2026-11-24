@@ -5,8 +5,8 @@ int main() {
         char name[50];
         int price;
         int pages;
-    } a,b;
-
+    } BK;
+    BK a,b;
     a.price=350;
     a.pages=450;
     strcpy(a.name,"HARRY POTTER");     //BCZ IN STRING WE DO INITIALIZATION AND DECLARATION TOGETHER AND IF NOT THEN STR CPY IS USED INT HIS MANNER
